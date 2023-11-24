@@ -4,8 +4,8 @@ global model, scaler
 
 def load():
     global model, scaler
-    model = pickle.load(open('model/model_rf.pkl', 'rb'))
-    scaler = pickle.load(open('model/scaler.pkl', 'rb'))
+    model = pickle.load(open('model_rf.pkl', 'rb'))
+    scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 def prediksi(data):
     # Standardisasi data
